@@ -21,10 +21,3 @@ void makeTimeFromSeconds(int *ansp, int seconds) {
 void makeTime(int *ansp, int h, int m, int s) {
     makeTimeFromSeconds(ansp, getSeconds(h, m, s));
 }
-
-int main() {
-    testGetSeconds();
-    testGetSecondsFromTime();  // ここを増やす
-    testErrorCheck();
-    return 0;
-}

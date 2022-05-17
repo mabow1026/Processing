@@ -4,7 +4,7 @@
 #define SS 2
 
 int getSeconds(int h, int m, int s);
-int getSecondsFromeTime(int *tp);
+int getSecondsFromTime(int *tp);
 void makeTimeFromSeconds(int *ansp, int seconds);
 void makeTime(int *ansp, int h, int m, int s);
 int timeCmp(int *t1p, int t2p);
