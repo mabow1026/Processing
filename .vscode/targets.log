@@ -1,0 +1,302 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.3
+# Built for x86_64-pc-msys
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon May 16 14:52:01 2022
+
+# Variables
+
+# environment
+SYSTEMDRIVE = C:
+# environment
+LC_ALL = C
+# environment
+USERPROFILE = C:\Users\mabow
+# environment
+LOCALAPPDATA = C:\Users\mabow\AppData\Local
+# environment
+VSCODE_IPC_HOOK_EXTHOST = \\.\pipe\vscode-ipc-4c76ec0d-a5d3-4a8a-a9fe-ec3630867eae-sock
+# environment
+VSCODE_CWD = C:\Program Files\Microsoft VS Code
+# environment
+CHOCOLATEYINSTALL = C:\ProgramData\chocolatey
+# environment
+SYSTEMROOT = C:\WINDOWS
+# environment
+PROCESSOR_LEVEL = 6
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\WINDOWS\system32\WindowsPowerShell\v1.0\Modules
+# environment
+GNUPLOT_LIB = C:\Program Files\gnuplot\demo;C:\Program Files\gnuplot\demo\games;C:\Program Files\gnuplot\share
+# default
+MAKE_COMMAND := make
+# environment
+GOPATH = C:\Users\mabow\go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_2224_QHKSGVJMSRNAFTGZ
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\mabow\AppData\Roaming\Code\CachedData\da15b6fd3ef856477bf6f4fb29ba1b7af717770d
+# environment
+LANG = C
+# default
+.LOADED := 
+# environment
+TMP = /c/Users/mabow/AppData/Local/Temp
+# default
+.INCLUDE_DIRS = /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+ONEDRIVE = C:\Users\mabow\OneDrive
+# environment
+POWERSHELL_DISTRIBUTION_CHANNEL = MSI:Windows 10 Home
+# makefile
+CURDIR := /c/Users/mabow/Documents/Processing
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+PROGRAMFILES = C:\Program Files
+# environment
+MFLAGS = -pqrR
+# default
+.SHELLFLAGS := -c
+# environment
+!C: = c:\Users\mabow\Documents\Processing
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile
+MAKEFILE_LIST := 
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 2224
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+POSH_THEMES_PATH = C:\Users\mabow\AppData\Local\Programs\oh-my-posh\themes
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"ja","availableLanguages":{"*":"ja"},"_languagePackId":"f5b8523d60216379ef9ba6dc243eb093.ja","_translationsConfigFile":"C:\\Users\\mabow\\AppData\\Roaming\\Code\\clp\\f5b8523d60216379ef9ba6dc243eb093.ja\\tcf.json","_cacheRoot":"C:\\Users\\mabow\\AppData\\Roaming\\Code\\clp\\f5b8523d60216379ef9ba6dc243eb093.ja","_resolvedLanguagePackCoreLocation":"C:\\Users\\mabow\\AppData\\Roaming\\Code\\clp\\f5b8523d60216379ef9ba6dc243eb093.ja\\da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"C:\\Users\\mabow\\AppData\\Roaming\\Code\\clp\\f5b8523d60216379ef9ba6dc243eb093.ja\\corrupted.info","_languagePackSupport":true}
+# environment
+ONEDRIVECONSUMER = C:\Users\mabow\OneDrive
+# default
+MAKE_HOST := x86_64-pc-msys
+# environment
+PROGRAMDATA = C:\ProgramData
+# default
+SHELL := /bin/sh
+# environment
+HOMEPATH = \Users\mabow
+# environment
+PLATFORMIO_CALLER = vscode
+# default
+MAKECMDGOALS := all
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+COMSPEC = C:\WINDOWS\system32\cmd.exe
+# environment
+WINDIR = C:\WINDOWS
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /c/Python310/Scripts:/c/Python310:/c/Program Files/Eclipse Adoptium/jdk-17.0.2.8-hotspot/bin:/c/Program Files/Eclipse Adoptium/jdk-8.0.322.6-hotspot/bin:/c/WINDOWS/system32:/c/WINDOWS:/c/WINDOWS/System32/Wbem:/c/WINDOWS/System32/WindowsPowerShell/v1.0:/c/WINDOWS/System32/OpenSSH:/c/ProgramData/chocolatey/bin:/mingw64/bin:/c/Program Files/Microsoft VS Code/bin:/usr/bin:/c/texlive/2022/bin/win32:/c/Program Files/dotnet:/c/ProgramData/chocolatey/lib/openocd/tools/OpenOCD-20211118-0.11.0/bin:/c/Program Files/gnuplot/bin:/c/Program Files/Git/cmd:/c/Program Files/Go/bin:/c/Program Files (x86)/Yarn/bin:/c/Program Files/nodejs:/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/c/Program Files/IVI Foundation/VISA/Win64/Bin:/c/Program Files (x86)/IVI Foundation/VISA/WinNT/Bin:/c/Program Files/Docker/Docker/resources/bin:/c/ProgramData/DockerDesktop/version-bin:/c/Program Files/PowerShell/7:/c/Users/mabow/scoop/shims:/c/Users/mabow/AppData/Local/Microsoft/WindowsApps:/c/Users/mabow/AppData/Local/Programs/oh-my-posh/bin:/:/c/Users/mabow/go/bin:/c/Users/mabow/AppData/Local/Yarn/bin:/c/Users/mabow/AppData/Roaming/npm
+# environment
+ZES_ENABLE_SYSMAN = 1
+# environment
+COMPUTERNAME = まんぼう
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+PROMPT = $P$G
+# environment
+CHOCOLATEYLASTPATHUPDATE = 132954230774140746
+# environment
+VXIPNPPATH64 = C:\Program Files\IVI Foundation\VISA\
+# environment
+LOGONSERVER = \\まんぼう
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = mabow
+# environment
+COMMONPROGRAMFILES = C:\Program Files\Common Files
+# automatic
+?F = $(notdir $?)
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.PY;.PYW
+# automatic
++F = $(notdir $+)
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERDOMAIN = まんぼう
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+OS = Windows_NT
+# environment
+PLATFORMIO_PATH = C:\Users\mabow\.platformio\python3;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.322.6-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\tools\msys64\mingw64\bin;C:\Program Files\Microsoft VS Code\bin;C:\tools\msys64\usr\bin;C:\texlive\2022\bin\win32;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20211118-0.11.0\bin;C:\Program Files\gnuplot\bin;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;C:\Users\mabow\scoop\shims;C:\Users\mabow\AppData\Local\Microsoft\WindowsApps;;C:\Users\mabow\AppData\Local\Programs\oh-my-posh\bin;C:\tools\msys64;C:\Users\mabow\go\bin;C:\Users\mabow\AppData\Local\Yarn\bin;C:\Users\mabow\AppData\Roaming\npm;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Eclipse Adoptium\jdk-17.0.2.8-hotspot\bin;C:\Program Files\Eclipse Adoptium\jdk-8.0.322.6-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\ProgramData\chocolatey\bin;C:\tools\msys64\mingw64\bin;C:\Program Files\Microsoft VS Code\bin;C:\tools\msys64\usr\bin;C:\texlive\2022\bin\win32;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\lib\openocd\tools\OpenOCD-20211118-0.11.0\bin;C:\Program Files\gnuplot\bin;C:\Program Files\Git\cmd;C:\Program Files\Go\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\nodejs\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin\;C:\Program Files\IVI Foundation\VISA\Win64\Bin\;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\PowerShell\7\;C:\Users\mabow\scoop\shims;C:\Users\mabow\AppData\Local\Microsoft\WindowsApps;;C:\Users\mabow\AppData\Local\Programs\oh-my-posh\bin;C:\tools\msys64;C:\Users\mabow\go\bin;C:\Users\mabow\AppData\Local\Yarn\bin;C:\Users\mabow\AppData\Roaming\npm
+# makefile
+.DEFAULT_GOAL := 
+# default
+MAKE_VERSION := 4.3
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# environment
+USERDOMAIN_ROAMINGPROFILE = まんぼう
+# environment
+NUMBER_OF_PROCESSORS = 8
+# environment
+PUBLIC = C:\Users\Public
+# environment
+APPDATA = C:\Users\mabow\AppData\Roaming
+# environment
+HOMEDRIVE = C:
+# environment
+PROCESSOR_ARCHITECTURE = AMD64
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PLATFORMIO_IDE = 2.4.3
+# environment
+HOME = /home/mabow
+# environment
+VXIPNPPATH = C:\Program Files (x86)\IVI Foundation\VISA\
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+TEMP = /c/Users/mabow/AppData/Local/Temp
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\f8f0a9f7f380c4e046068b9c7a825846-1.67.1-main-sock
+# environment
+TERM = xterm-256color
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# environment
+SESSIONNAME = Console
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# environment
+PROCESSOR_REVISION = 8c01
+# environment
+CHOCOLATEYTOOLSLOCATION = C:\tools
+# environment
+PROCESSOR_IDENTIFIER = Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+# variable set hash-table stats:
+# Load=109/1024=11%, Rehash=0, Collisions=15/133=11%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 941168862, inode 2533274791231868): 6 files, no impossibilities.
+
+# 6 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+# Not a target:
+makefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+GNUmakefile:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=6/1024=1%, Rehash=0, Collisions=0/15=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 13 / storage = 94 B / avg = 7 B
+# current buf: size = 8162 B / used = 94 B / count = 13 / avg = 7 B
+
+# strcache performance: lookups = 16 / hit rate = 18%
+# hash-table stats:
+# Load=13/8192=0%, Rehash=0, Collisions=0/16=0%
+# Finished Make data base on Mon May 16 14:52:01 2022
+
+ 
