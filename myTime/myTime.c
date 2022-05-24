@@ -1,6 +1,6 @@
 #include "myTime.h"
 
-#include <stdio.h>
+#include <stdlib.h>
 
 int getSeconds(int h, int m, int s) {
     //
@@ -60,13 +60,6 @@ int divTimeByTime(int *t1p, int *t2p) {
 
 void subTime(int *ansp, int *t1p, int *t2p) {
     //
-    int sec;
-    if (timeCmp(t1p, t2p) == 1) {
-        sec = getSecondsFromTime(t1p) - getSecondsFromTime(t2p);
-    } else if (timeCmp(t1p, t2p) == -1) {
-        sec = getSecondsFromTime(t2p) - getSecondsFromTime(t1p);
-    } else {
-        sec = getSecondsFromTime(t1p) - getSecondsFromTime(t2p);
-    }
+    int sec = abs(getSecondsFromTime(t1p) - getSecondsFromTime(t2p));
     makeTimeFromSeconds(ansp, sec);
 }
