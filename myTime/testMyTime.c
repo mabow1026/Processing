@@ -7,9 +7,9 @@ void testGetSeconds() {
     int ans;
     testStart("getSeconds");
     ans = getSeconds(2, 34, 56);
-    assertEqualsInt(ans, 9296);
+    assertEqualsInt(ans, 2 * 3600 + 34 * 60 + 56);
     ans = getSeconds(11, 59, 59);
-    assertEqualsInt(ans, 43199);
+    assertEqualsInt(ans, 12 * 3600 - 1);
 }
 
 void testGetSecondsFromTime() {
@@ -17,9 +17,9 @@ void testGetSecondsFromTime() {
     int ans;
     testStart("getSecondsFromTime");
     ans = getSecondsFromTime(jikoku1);
-    assertEqualsInt(ans, 9296);
+    assertEqualsInt(ans, 2 * 3600 + 34 * 60 + 56);
     ans = getSecondsFromTime(jikoku2);
-    assertEqualsInt(ans, 43199);
+    assertEqualsInt(ans, 12 * 3600 - 1);
 }
 
 void testMakeTimeFromSeconds() {
@@ -35,6 +35,19 @@ void testMakeTimeFromSeconds() {
     assertEqualsInt(jikoku[SS], 59);
 }
 
+void testMakeTime() {
+    int jikoku[N];
+    testStart("makeTimeFromSeconds");
+    makeTime(jikoku, 1, 77, 90);
+    assertEqualsInt(jikoku[HH], 2);
+    assertEqualsInt(jikoku[MM], 18);
+    assertEqualsInt(jikoku[SS], 30);
+    makeTime(jikoku, 10, 99, 94);
+    assertEqualsInt(jikoku[HH], 11);
+    assertEqualsInt(jikoku[MM], 40);
+    assertEqualsInt(jikoku[SS], 34);
+}
+
 void testTimeCmp() {
     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59};
     assertEqualsInt(timeCmp(jikoku1, jikoku2), -1);
@@ -42,61 +55,65 @@ void testTimeCmp() {
     assertEqualsInt(timeCmp(jikoku1, jikoku1), 0);
 }
 
-void testAddTime() {
-    testStart("addTime");
-    int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59}, jikoku3[N] = {0, 0, 0};
-    addTime(jikoku3, jikoku1, jikoku2);
-    assertEqualsInt(jikoku3[HH], 2 + 12);
-    assertEqualsInt(jikoku3[MM], 34);
-    assertEqualsInt(jikoku3[SS], 56 - 1);
-    addTime(jikoku1, jikoku2, jikoku3);
-    assertEqualsInt(jikoku1[HH], 2 + 12 + 12);
-    assertEqualsInt(jikoku1[MM], 34);
-    assertEqualsInt(jikoku1[SS], 56 - 2);
-}
-
-void testMulTime() {
-    testStart("mulTime");
-    int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {0, 0, 0};
-    mulTime(jikoku2, jikoku1, 5);
-    assertEqualsInt(jikoku2[HH], 12);
-    assertEqualsInt(jikoku2[MM], 54);
-    assertEqualsInt(jikoku2[SS], 40);
-    mulTime(jikoku2, jikoku1, 3);
-    assertEqualsInt(jikoku2[HH], 7);
-    assertEqualsInt(jikoku2[MM], 44);
-    assertEqualsInt(jikoku2[SS], 48);
-}
-
-void testDivTime() {
-    testStart("divTime");
-    int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {0, 0, 0};
-    mulTime(jikoku2, jikoku1, 4);
-    assertEqualsInt(jikoku2[HH], 10);
-    assertEqualsInt(jikoku2[MM], 19);
-    assertEqualsInt(jikoku2[SS], 44);
-    mulTime(jikoku2, jikoku1, 2);
-    assertEqualsInt(jikoku2[HH], 5);
-    assertEqualsInt(jikoku2[MM], 9);
-    assertEqualsInt(jikoku2[SS], 52);
-}
-void testDivTimeByTime() {
-    int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59};
-    assertEqualsInt(divTimeByTime(jikoku1, jikoku2), 0);
-    assertEqualsInt(divTimeByTime(jikoku2, jikoku1), 4);
-}
-
-void testSubTime() {
-    int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59}, jikoku3[N] = {0, 0, 0};
-    subTime(jikoku3, jikoku1, jikoku2);
-    assertEqualsInt(jikoku3[HH], 9);
-    assertEqualsInt(jikoku3[MM], 25);
-    assertEqualsInt(jikoku3[SS], 3);
-    subTime(jikoku3, jikoku2, jikoku1);
-    assertEqualsInt(jikoku3[HH], 9);
-    assertEqualsInt(jikoku3[MM], 25);
-    assertEqualsInt(jikoku3[SS], 3);
-}
+// void testAddTime() {
+//     testStart("testAddTime");
+//     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59},
+//         jikoku3[N] = {0, 0, 0};
+//     addTime(jikoku3, jikoku1, jikoku2);
+//     assertEqualsInt(jikoku3[HH], 2 + 12);
+//     assertEqualsInt(jikoku3[MM], 34);
+//     assertEqualsInt(jikoku3[SS], 56 - 1);
+//     addTime(jikoku2, jikoku1, jikoku3);
+//     assertEqualsInt(jikoku2[HH], 14 + 2 + 1);
+//     assertEqualsInt(jikoku2[MM], 34 + 34 + 1 - 60);
+//     assertEqualsInt(jikoku2[SS], 55 + 56 - 60);
+// }
+// void testMulTime() {
+//     testStart("testMulTime");
+//     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59},
+//         jikoku3[N] = {0, 0, 0};
+//     mulTime(jikoku3, jikoku1, 2);
+//     assertEqualsInt(jikoku3[HH], 2 * 2 + 1 * 1);
+//     assertEqualsInt(jikoku3[MM], (34 * 2 + 1 * 1) % 60);
+//     assertEqualsInt(jikoku3[SS], (56 * 2) % 60);
+//     mulTime(jikoku3, jikoku2, 3);
+//     assertEqualsInt(jikoku3[HH], 11 * 3 + 1 * 2);
+//     assertEqualsInt(jikoku3[MM], (59 * 3 + 1 * 2) % 60);
+//     assertEqualsInt(jikoku3[SS], (59 * 3) % 60);
+// }
+// void testDivTime() {
+//     testStart("testDivTime");
+//     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {10, 30, 12},
+//         jikoku3[N] = {0, 0, 0};
+//     divTime(jikoku3, jikoku1, 2);
+//     assertEqualsInt(jikoku3[HH], 1);
+//     assertEqualsInt(jikoku3[MM], 17);
+//     assertEqualsInt(jikoku3[SS], 28);
+//     divTime(jikoku3, jikoku2, 4);
+//     assertEqualsInt(jikoku3[HH], 2);
+//     assertEqualsInt(jikoku3[MM], 37);
+//     assertEqualsInt(jikoku3[SS], 33);
+// }
+// void testDivTimeByTime() {
+//     testStart("testDivTimeByTime");
+//     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59},
+//         jikoku3[N] = {0, 0, 0};
+//     assertEqualsInt(divTimeByTime(jikoku2, jikoku1), 4);
+//     assertEqualsInt(divTimeByTime(jikoku1, jikoku3), -1);
+// }
+// void testSubTime() {
+//     testStart("testSubTime");
+//     int jikoku1[N] = {2, 34, 56}, jikoku2[N] = {11, 59, 59},
+//         jikoku3[N] = {0, 0, 0};
+//     subTime(jikoku3, jikoku1, jikoku2);
+//     assertEqualsInt(jikoku3[HH], 11 - 2);
+//     assertEqualsInt(jikoku3[MM], 59 - 34);
+//     assertEqualsInt(jikoku3[SS], 59 - 56);
+//     subTime(jikoku2, jikoku1, jikoku3);
+//     assertEqualsInt(jikoku2[HH], 9 - 2 - 1);
+//     assertEqualsInt(jikoku2[MM], 25 - 34 + 60 - 1);
+//     assertEqualsInt(jikoku2[SS], 3 - 56 + 60);
+// }
 
 int main() {
     testGetSeconds();

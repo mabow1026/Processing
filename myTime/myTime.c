@@ -1,5 +1,6 @@
 #include "myTime.h"
 
+#include <stdio.h>
 #include <stdlib.h>
 
 int getSeconds(int h, int m, int s) {
@@ -62,4 +63,12 @@ void subTime(int *ansp, int *t1p, int *t2p) {
     //
     int sec = abs(getSecondsFromTime(t1p) - getSecondsFromTime(t2p));
     makeTimeFromSeconds(ansp, sec);
+}
+
+void printHourMinute(int *tp) {
+    printf("%2d:%02d", tp[HH], tp[MM]);
+}
+
+void printMinuteSecond(int *tp) {
+    printf("%2d'%02d''", tp[MM], tp[SS]);
 }

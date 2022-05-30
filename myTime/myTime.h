@@ -13,3 +13,5 @@ void mulTime(int *ansp, int *tp, int n);
 void divTime(int *ansp, int *tp, int n);
 int divTimeByTime(int *t1p, int *t2p);
 void subTime(int *ansp, int *t1p, int *t2p);
+void printHourMinute(int *tp);
+void printMinuteSecond(int *tp);
