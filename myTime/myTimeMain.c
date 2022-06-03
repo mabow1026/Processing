@@ -27,7 +27,7 @@ void q2() {
     //
     int examTime[N], restTime[N], launchTime[N], start[N], end[N];
     printf("Q2\n");
-    makeTime(examTime, 0, 60, 0);
+    makeTime(examTime, 0, 50, 0);
     makeTime(restTime, 0, 20, 0);
     makeTime(launchTime, 0, 60, 0);
     makeTime(start, 9, 0, 0);
@@ -50,7 +50,7 @@ void q3() {
     printf("Q3\n");
     makeTime(expTime, 0, 90 * 2, 0);
     makeTime(lookBackTime, 0, 30, 0);
-    makeTime(changeTime, 0, 9, 0);
+    makeTime(changeTime, 0, 10 - 1, 0);
     subTime(expTime, expTime, lookBackTime);
     subTime(expTime, expTime, changeTime);
     divTime(presentationTime, expTime, 10);
@@ -61,11 +61,24 @@ void q3() {
 }
 
 void q4() {
+    //
+    int announceTime[N], lookBackTime[N], changeTime[N], presentationTime[N];
+    printf("Q4\n");
+    makeTime(announceTime, 0, 90 * 4, 0);
+    makeTime(lookBackTime, 0, 30, 0);
+    makeTime(changeTime, 0, 40 - 2, 0);
+    subTime(announceTime, announceTime, lookBackTime);
+    subTime(announceTime, announceTime, changeTime);
+    divTime(presentationTime, announceTime, 40);
+    printMinuteSecond(presentationTime);
+    printf("\n");
+    printf("---\n\n");
 }
 
 int main() {
     q1();
     q2();
     q3();
+    q4();
     return 0;
 }
